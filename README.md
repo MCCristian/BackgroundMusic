@@ -121,7 +121,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
     }
 }
 
-   2. Add services in Android Manifest:
+2. Add services in Android Manifest:
 
 <service
     android:name=".MusicService"
@@ -167,7 +167,7 @@ Intent music = new Intent();
 music.setClass(this, MusicService.class);
 startService(music);
 
-   4. Resume music on onResume();
+4. Resume music on onResume();
 
 @Override
 protected void onResume() {
